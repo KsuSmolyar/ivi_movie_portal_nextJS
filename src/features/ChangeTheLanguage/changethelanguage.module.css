@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  padding: 3px;
+  background-color: var(--gray-light);
+  border-radius: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gray-light);
+  border-radius: 50%;
+}
+.active {
+  background-color: var(--gray-active);
+}
+.passive {
+  opacity: 0.5;
+}

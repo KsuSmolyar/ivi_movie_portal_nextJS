@@ -1,0 +1,58 @@
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--gray-16);
+}
+
+.innerButtonContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.trailerPlayer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+@media (max-width: 1160px) {
+  .buttonContainer {
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 880px) {
+  .buttonContainer {
+    width: fit-content;
+    flex-direction: row;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 4px 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.16) 100%);
+    border-radius: 0 0 12px 12px;
+  }
+  .button.button {
+    padding: 12px 15px;
+    border: none;
+    background-color: transparent;
+  }
+}

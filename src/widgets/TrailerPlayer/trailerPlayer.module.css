@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+}
+
+.player {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  z-index: 2;
+}
+
+.exit {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.exit:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-color: transparent;
+}

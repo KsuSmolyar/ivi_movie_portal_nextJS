@@ -1,0 +1,35 @@
+.docs-story {
+  background-color: #100e19;
+}
+td > span,
+th > span,
+.docblock-argstable,
+.docblock-argstable-body {
+  color: black;
+}
+#control-type > option {
+  color: black;
+}
+
+#storybook-root {
+  overflow: hidden;
+}
+
+.storybookTip.storybookTip {
+  animation-iteration-count: infinite;
+}
+
+.storybookCarousel.storybookCarousel {
+  --viewed-elements-count: 4;
+}
+
+.storybookTopPoster.storybookTopPoster {
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+}
+
+.storybookTrailerPicture.storybookTrailerPicture {
+  width: 200px;
+  height: 120px;
+}

@@ -1,0 +1,38 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carousel.carousel {
+  --fz: 24px;
+  --lh: 28px;
+  --left: -18px;
+  --right: -21px;
+}
+.movieBadgeCarouselContent {
+  --viewed-elements-count: 5;
+}
+
+.movieBadgeContainer {
+  padding: 0px 5px;
+  overflow-y: clip;
+}
+
+@media (max-width: 900px) {
+  .movieBadgeCarouselContent {
+    --viewed-elements-count: 4;
+  }
+}
+
+@media (max-width: 650px) {
+  .movieBadgeCarouselContent {
+    --viewed-elements-count: 3;
+  }
+}
+
+@media (max-width: 452px) {
+  .movieBadgeCarouselContent {
+    --viewed-elements-count: 2;
+  }
+}

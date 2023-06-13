@@ -1,0 +1,20 @@
+.root {
+  margin-top: 10px;
+}
+
+.root > p {
+  font-size: 12px;
+  color: var(--gray-72);
+}
+
+.yearCountry,
+.genre {
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.genreBookmarks {
+  justify-content: center;
+}

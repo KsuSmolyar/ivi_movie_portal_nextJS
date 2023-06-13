@@ -1,0 +1,38 @@
+.bannerHover {
+  height: 100%;
+  width: 100%;
+  background-color: var(--gray-60);
+  border-radius: 8px;
+}
+
+.bannerHoverWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-inline: 10px;
+}
+
+.bannerHoverList {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerHoverItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.bannerRating {
+  display: flex;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

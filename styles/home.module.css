@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 15px;
+}
+.wrapper:last-child {
+  margin-bottom: 70px;
+}

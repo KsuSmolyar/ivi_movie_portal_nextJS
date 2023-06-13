@@ -1,0 +1,125 @@
+.container {
+  display: none;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+}
+
+.openButton {
+  position: relative;
+  width: fit-content;
+  gap: 7px;
+}
+
+.iconFilters {
+  color: var(--gray-light);
+}
+
+.openButton.active::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 28px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  box-shadow: var(--pink-shadow);
+}
+.closeButton {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 16px;
+  z-index: 1003;
+}
+
+.closeButtonIcon {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-light);
+  transition-delay: 0s;
+}
+
+.filterPanelMobile {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100%;
+  padding-top: 40px;
+  min-height: 100%;
+}
+
+.filterWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.contentScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 24px 32px;
+}
+
+.contentTitle {
+  margin-bottom: 40px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 60px;
+  visibility: visible;
+  -webkit-font-smoothing: antialiased;
+}
+
+.titleFixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background: var(--gray-drop);
+  box-shadow: 0 20px 40px var(--gray-24);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  color: var(--white);
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: transform 200ms ease, -webkit-transform 200ms ease, -o-transform 200ms ease;
+  z-index: 1;
+}
+
+.titleFixed.show {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.title {
+  padding-left: 14px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carouselContainer {
+  margin-top: 10px;
+}

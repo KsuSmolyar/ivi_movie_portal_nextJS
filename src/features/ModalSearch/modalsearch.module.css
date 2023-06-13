@@ -1,0 +1,23 @@
+.closeButton {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 16px;
+  z-index: 1003;
+}
+
+.closeButtonIcon {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-light);
+  transition-delay: 0s;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px 16px 0;
+  width: 100%;
+}

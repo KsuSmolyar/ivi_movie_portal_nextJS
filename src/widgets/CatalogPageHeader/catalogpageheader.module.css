@@ -1,0 +1,47 @@
+.containerOuter {
+  padding: 32px 0px 16px;
+}
+
+@media (max-width: 768px) {
+  .containerOuter {
+    background-color: var(--dark-gray);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+    padding: var(--padding-mobile);
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mainTitle {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.filtersText span {
+  color: var(--gray-light);
+  font-size: 15px;
+  line-height: 20px;
+}

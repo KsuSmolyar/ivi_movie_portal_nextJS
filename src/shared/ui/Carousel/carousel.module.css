@@ -1,0 +1,76 @@
+.carouselContainer {
+  --fz: 15px;
+  --lh: 20px;
+  --fw: 600;
+  --right: -15px;
+  --left: -14px;
+  --viewed-elements-count: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 14px;
+  font-size: var(--fz);
+  line-height: var(--lh);
+  font-weight: var(--fw);
+}
+
+.titleLink {
+  cursor: pointer;
+}
+
+.iconStyle {
+  font-size: 16px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.carouselContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(100% / var(--viewed-elements-count)), 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(calc(100% / var(--viewed-elements-count)), 1fr);
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.carouselContent > * {
+  scroll-snap-align: start;
+}
+
+.carouselContent::-webkit-scrollbar {
+  display: none;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.prevButton {
+  left: var(--left);
+}
+
+.nextButton {
+  right: var(--right);
+}
+
+@media (max-width: 768px) {
+  .prevButton,
+  .nextButton {
+    display: none;
+  }
+}

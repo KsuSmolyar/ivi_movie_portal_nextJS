@@ -1,0 +1,59 @@
+.message {
+  margin-top: 30px;
+  padding-block: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.loaderContainer {
+  position: relative;
+  height: 130px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+}
+
+.listComments {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemComments:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.commentContainer {
+  padding-right: 8px;
+}
+
+.carouselContainer {
+  --viewed-elements-count: 2;
+}
+
+@media (min-width: 600px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile {
+    display: block;
+    overflow: hidden;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .carouselContainer {
+    --viewed-elements-count: 1;
+  }
+}

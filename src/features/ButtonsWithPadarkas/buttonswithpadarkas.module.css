@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  width: 100%;
+}
+.btnGrad {
+  background-image: url(https://solea-parent.dfs.ivi.ru/picture/bypass/teaserTilePattern_a.svg);
+}
+
+.text {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .root {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

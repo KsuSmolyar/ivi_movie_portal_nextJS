@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 26px;
+}
+
+.genreCardContainer {
+  padding: 0 11px;
+}
+
+.innerContainerGenreCard {
+  display: flex;
+  justify-content: center;
+  height: 128px;
+}
+
+@media (max-width: 1340px) {
+  .innerContainerGenreCard {
+    height: auto;
+  }
+}
+
+.genreCardCarouselContent {
+  --viewed-elements-count: 10;
+}
+
+@media (max-width: 1732px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 7;
+  }
+}
+
+@media (max-width: 1340px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 6;
+  }
+}
+
+@media (max-width: 1137px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 5;
+  }
+}
+
+@media (max-width: 952px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 3;
+  }
+}
+
+@media (max-width: 574px) {
+  .genreCardCarouselContent {
+    --viewed-elements-count: 2;
+  }
+}
+
+.personCardCarouselContent {
+  --viewed-elements-count: 8;
+}
+
+@media (max-width: 1440px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 5;
+  }
+}
+
+@media (max-width: 768px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 4;
+  }
+}
+
+@media (max-width: 500px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 3;
+  }
+}
+
+@media (max-width: 453px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 2;
+  }
+}
+
+.personCardContainer {
+  padding-left: 14px;
+}
+
+.carousel.carousel {
+  --fz: 24px;
+  --lh: 28px;
+  --left: -18px;
+  --right: -21px;
+}

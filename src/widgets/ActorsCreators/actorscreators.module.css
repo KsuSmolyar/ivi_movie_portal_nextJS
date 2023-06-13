@@ -1,0 +1,67 @@
+.title {
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;
+  overflow: hidden;
+}
+
+.item {
+  padding-left: 14px;
+}
+
+.entryModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.personCardCarouselContent {
+  --viewed-elements-count: 11;
+}
+
+@media (max-width: 1024px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 8;
+  }
+}
+
+@media (max-width: 768px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 6;
+  }
+}
+
+@media (max-width: 500px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 5;
+  }
+}
+
+@media (max-width: 453px) {
+  .personCardCarouselContent {
+    --viewed-elements-count: 4;
+  }
+}
+
+.carouselContainer.carouselContainer {
+  --fz: 24px;
+  --lh: 28px;
+  --fw: 700px;
+}
+
+@media (max-width: 768px) {
+  .carouselContainer.carouselContainer {
+    --fz: 18px;
+    --lh: 22px;
+    --fw: 700px;
+  }
+}

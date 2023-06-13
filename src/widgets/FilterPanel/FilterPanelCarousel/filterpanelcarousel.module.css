@@ -1,0 +1,54 @@
+.carousel.carouselButtons {
+  grid-template-columns: min-content;
+  grid-auto-columns: min-content;
+}
+
+@media (min-width: 900px) {
+  .carousel {
+    border-bottom: 1px solid var(--gray-light);
+    padding: 12px 0;
+    margin: 0;
+  }
+  .carouselGenres {
+    --viewed-elements-count: 4;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carouselGenres {
+    --viewed-elements-count: 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .carouselGenres {
+    --viewed-elements-count: 2;
+  }
+}
+
+.genreCardContainer {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .card.card {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition-duration: 0.8s;
+  }
+
+  .iconCard.iconCard {
+    color: var(--white);
+  }
+  .card.card:hover,
+  .card.card.active {
+    background-color: var(--gray-798);
+    border-color: var(--gray-798);
+  }
+}
+
+.card.card.active {
+  background-color: var(--gray-51);
+  border-color: var(--gray-51);
+}

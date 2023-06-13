@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionButton {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-left: 8px;
+  width: fit-content;
+}
+
+.buttonInnerContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textUnder {
+  padding-left: 9px;
+  color: var(--gray-light);
+}
+
+.textButton {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.content {
+  position: relative;
+}
