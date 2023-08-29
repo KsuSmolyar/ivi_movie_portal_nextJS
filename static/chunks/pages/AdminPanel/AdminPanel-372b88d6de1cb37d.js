@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[882],{9425:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/AdminPanel/AdminPanel",function(){return u(239)}])}},function(n){n.O(0,[239,774,888,179],function(){return n(n.s=9425)}),_N_E=n.O()}]);

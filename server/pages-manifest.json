@@ -1,0 +1,22 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/AdminPanel/AdminPanel": "pages/AdminPanel/AdminPanel.html",
+  "/AdminPanel/GenreChange/GenreChange": "pages/AdminPanel/GenreChange/GenreChange.html",
+  "/AdminPanel/MovieChange/MovieChange": "pages/AdminPanel/MovieChange/MovieChange.html",
+  "/AdminPanel": "pages/AdminPanel.html",
+  "/Authorization/Authorization": "pages/Authorization/Authorization.html",
+  "/Authorization": "pages/Authorization.html",
+  "/General/General": "pages/General/General.html",
+  "/General": "pages/General.html",
+  "/MovieReviews/MovieReviews": "pages/MovieReviews/MovieReviews.html",
+  "/MovieReviews": "pages/MovieReviews.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.js",
+  "/ActorPage/[id]": "pages/ActorPage/[id].js",
+  "/AllParticipants/[id]": "pages/AllParticipants/[id].js",
+  "/CatalogPage/[...slug]": "pages/CatalogPage/[...slug].js",
+  "/CatalogPage": "pages/CatalogPage.js",
+  "/MoviePage/[id]": "pages/MoviePage/[id].js",
+  "/": "pages/index.js"
+}

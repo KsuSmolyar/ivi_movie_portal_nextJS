@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[277],{6603:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/AdminPanel",function(){return _(6052)}])},6052:function(n,u,_){"use strict";_.r(u);var t=_(239);u.default=t.default}},function(n){n.O(0,[239,774,888,179],function(){return n(n.s=6603)}),_N_E=n.O()}]);
