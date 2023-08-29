@@ -1,7 +1,7 @@
 import React, { useState, MouseEvent, useCallback } from 'react';
 import styles from './filterpanelmobile.module.css';
 import { Modal } from 'shared/ui/Modal';
-import { countries, estimates, genres, ratings } from '../constants';
+import { countries, estimates, genresId, ratings } from '../constants';
 import { useTranslation } from 'react-i18next';
 import { ButtonOrLink } from 'shared/ui/ButtonOrLink/ButtonOrLink';
 import classNames from 'classnames';
@@ -66,7 +66,7 @@ export const FilterPanelMobile = React.memo(() => {
                 >
                   {t('FilterPanel.Filters')}
                 </p>
-                <FilterPanelCarousel type='genres' array={genres} />
+                <FilterPanelCarousel type='genres' array={genresId} />
 
                 <FilterPanelMobileAccordion
                   textButton={t('headerDropdownNavigation.countries')}
