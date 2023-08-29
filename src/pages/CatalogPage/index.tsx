@@ -56,7 +56,7 @@ function CatalogPage({ movies, actors }: ICatalogPage) {
     <div className={styles.container}>
       <Breadcrumbs className='container' crumbs={[{ title: t('CatalogPage.Movies') }]} />
 
-      <CatalogPageHeader titleText={t(`CatalogPageHeader.MoviesWatchOnline`)} />
+      <CatalogPageHeader/>
 
       <div className={classNames('container', styles.catalogContentContainer)}>
         <FilterPanelDesktop />

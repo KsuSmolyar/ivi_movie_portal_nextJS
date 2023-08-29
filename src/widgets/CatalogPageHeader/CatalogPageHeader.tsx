@@ -9,6 +9,7 @@ import { getSelectedFilterSelector } from 'app/store/filterSlice';
 
 interface ICatalogPageHeader {
   showSelectedFilters?: boolean;
+  
 }
 export const CatalogPageHeader = ({ showSelectedFilters }: ICatalogPageHeader) => {
   const { t } = useTranslation();

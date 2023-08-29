@@ -6,7 +6,7 @@ const meta = {
   title: 'Example/GenreBookmarks',
   component: GenreBookmarks,
   tags: ['autodocs'],
-  args: { ganre: film.genres },
+  args: { genres: film.genres },
 
   parameters: {
     layout: 'centered',
